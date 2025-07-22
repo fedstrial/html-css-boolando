@@ -1,0 +1,156 @@
+:root {
+    --theme-orange: #FE6900;
+    --theme-red: #FE0301;
+    --theme-green: #017E00;
+    --text-red: #C41C1D;
+    --theme-light-black: #1A1A1A;
+    --theme-image-backgrund: #E3E3E3
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--theme-orange);
+}
+
+#header-container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+#logo {
+    height: 50px;
+}
+
+#logo-container {
+    width: 34%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#header-links,
+#navigation-icons {
+    display: flex;
+    margin: auto;
+    width: 33%;
+    gap: 20px;
+}
+
+#navigation-icons {
+    justify-content: flex-end;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#cards {
+    padding-top: 50px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: calc((100% / 3) - (40px / 3));
+}
+
+.image-container {
+    position: relative;
+}
+
+.card-image, .hover-image{
+    width: 100%;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 40px;
+    background-color: white;
+}
+
+.heart:hover {
+    color: var(--text-red);
+}
+
+.brand {
+    font-size: 10px;
+}
+
+.model {
+    font-weight: bold;
+}
+
+.discounted-price {
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--text-red);
+}
+
+.original-price {
+    font-weight: normal;
+    text-decoration: line-through;
+    color: black;
+}
+
+.discount-and-green-label {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.discount, .green {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.discount {
+    background-color: var(--text-red);
+}
+
+.green {
+    background-color: var(--theme-green);
+}
